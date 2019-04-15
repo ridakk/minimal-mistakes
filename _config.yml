@@ -60,6 +60,7 @@ staticman:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
   endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
 reCaptcha:
+  enabled                : true
   siteKey                : "6LcBRZ4UAAAAANxr1Zr79qpGA-qgqtM50amdGpSU"
   secret                 : "6LcBRZ4UAAAAANlzmwUChe3tVDZfWg2fda_Vv27H"
 atom_feed:
