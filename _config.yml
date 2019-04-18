@@ -21,11 +21,11 @@ staticman:
   branch                 : "master"
   endpoint               : "https://api.staticman.net/v3/entry/github/"
 reCaptcha:
-  enabled: false
-  siteKey: "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
+  enabled: true
+  siteKey: "6LcBRZ4UAAAAANxr1Zr79qpGA-qgqtM50amdGpSU"
   # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
   # For more information, https://staticman.net/docs/encryption
-  secret: "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
+  secret: "tVp8rnr481bLFPWCYwFNVi4MhJBSum2eKyxRpsf95lTE5o7Y/r/X+te4YAXjXhfC7exoCvlNGQgq4VOORcUXZusRPFYJI6gQbJ8nmZ5YcS915B+oiHjJtFhRunIerVkpHXC8ZvwitQuf2Z1Fg+w0EBOU0yukxiNKcabLhvvPX9c="
 
 atom_feed:
   path                   : # blank (default) uses feed.xml
