@@ -21,7 +21,7 @@ staticman:
   branch                 : "master"
   endpoint               : "https://api.staticman.net/v3/entry/github/"
 reCaptcha:
-  enabled: true
+  enabled: false
   siteKey: "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
   # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
   # For more information, https://staticman.net/docs/encryption
