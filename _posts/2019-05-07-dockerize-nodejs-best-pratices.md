@@ -9,7 +9,7 @@ tags:
 
 1. Sabit etiketler ve minimal imajlar kullanın
 
-Mümkün ise mutlaka Node.js LTS sürümlerini sabit etiket ile kullanın, sabit etiket kullanamak güvenlik yamalarını otomatik olarak almayı engellese de kontrolsüz güncellemelerin uygulamanızı kırmasını engeller.
+Mümkün ise mutlaka Node.js LTS sürümlerini sabit etiket ile kullanın, sabit etiket kullanmak güvenlik yamalarını otomatik olarak almayı engellese de kontrolsüz güncellemelerin uygulamanızı kırmasını engeller.
 
 ```text
 FROM node:12.2.0-alphine
