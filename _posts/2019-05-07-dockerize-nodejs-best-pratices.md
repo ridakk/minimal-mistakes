@@ -19,7 +19,7 @@ FROM node:12.2.0-alphine
 
 İmaj derlemesi sırasında ihtiyaç duyabileceğiniz şifreleri ya da hassas bilgileri ara katmanlarda kullanarak, son imaja hiçbir hassas verinin ulaşmamasını sağlayabilirsiniz.
 
-Farklı katmanlarda farklı imajlar kullanılabileceği gibi, son katmanda mümkün ise minimal imajlar tercih edin. Minimal imajlar daha az saldırı yüzeyi ve daha güvenli uygulama imajları demektir.
+Farklı katmanlarda farklı imajlar kullanılabileceği gibi, son katmanda mümkün ise minimal imajlar tercih edin (`*-alpine gibi`). Minimal imajlar daha az saldırı yüzeyi ve daha güvenli uygulama imajları demektir.
 
 ```text
 FROM node:12.2.0 AS build-env
@@ -56,7 +56,7 @@ ENV github_token=$github_token_arg
 # package.json and package-lock.json
 COPY package*.json ./
 
-npm install --production
+RUN npm install --production
 
 ...
 
@@ -83,7 +83,7 @@ ENV github_token=$github_token_arg
 # package.json and package-lock.json
 COPY package*.json ./
 
-npm install --production
+RUN npm install --production
 
 FROM node:12.2.0-alpine AS runtime-env
 
@@ -94,6 +94,8 @@ COPY --from=build-env ./ /app
 RUN chown -R node:node /app
 
 USER node
+
+EXPOSE <uygulama portu>
 
 CMD [“node”, “index.js”]
 ```
