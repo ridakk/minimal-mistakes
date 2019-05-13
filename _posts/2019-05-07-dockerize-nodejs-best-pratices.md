@@ -81,7 +81,9 @@ ARG github_token_arg=default_value
 ENV github_token=$github_token_arg
 
 # package.json and package-lock.json
-COPY package*.json ./
+COPY package*.json /build/
+
+WORKDIR /build
 
 RUN npm install --production
 
@@ -89,11 +91,11 @@ FROM node:12.2.0-alpine AS runtime-env
 
 RUN mkdir /app
 
-COPY --from=build-env ./ /app
-
-RUN chown -R node:node /app
+COPY --from=build-env --chown=node:node /build /app
 
 USER node
+
+WORKDIR /app
 
 EXPOSE <uygulama portu>
 
