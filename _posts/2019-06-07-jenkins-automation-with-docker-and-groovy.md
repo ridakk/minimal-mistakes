@@ -57,7 +57,7 @@ RUN /usr/local/bin/plugins.sh plugins.txt
 
 Bu adım ile eklentiler `docker build` sırasında ile yüklenmiş olacak, `build` süresi ve docker imaj boyutu artacak olsa bile, Jenkins ilk kez çalıştırılırken artık eklentileri indirmeyecek ve çok daha hızlı isteklere yanıt vermeye başlayacaktır. Ve de eklenti versiyonlarının yönetimi kodlanmış olacaktır.
 
-Her eklenti ekleme ve çıkarma için aşağıdaki adımların uygulanmalıdır.
+Her eklenti ekleme ve çıkarma için aşağıdaki adımlar uygulanmalıdır.
 
 1. Jenkins UI üstünden plugin eklenir ya da çıkarılır
 2. [Groovy betiği](https://github.com/ridakk/jenkins/blob/master/groovy-scripts/get-jenkins-plugin-list.groovy) ile güncel eklenti listesi Jenkins Script Console üzerinden alınır ve `plugins.txt` güncellenir.
