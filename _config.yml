@@ -73,7 +73,7 @@ analytics:
 author:
   name             : *name
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Kurumsal köle, Eş, Baba"
+  bio              : "Developer, Eş, Baba"
   location         : "Istanbul, TR"
   email            :
   links:
