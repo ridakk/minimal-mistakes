@@ -27,6 +27,7 @@ npm install jsdoc-export-default-interop --save-dev
 
 [JSDoc](https://devdocs.io/jsdoc/about-configuring-jsdoc) configürasyonu
 
+jsdoc_conf.json
 ```json
 {
   "tags": {
@@ -83,7 +84,8 @@ npm install dmd-bitbucket --save-dev
 
 [Döküman şablonu](https://github.com/jsdoc2md/jsdoc-to-markdown/wiki/Create-a-README-template) oluşturma
 
-```markdown
+ApiDocs.hbs
+```text
 # Documentation
 
 {{>main}}
