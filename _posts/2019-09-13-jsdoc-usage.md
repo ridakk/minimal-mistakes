@@ -1,5 +1,6 @@
 ---
 title: "JsDoc kullanımı ve API açıklamaları  oluşturma"
+last_modified_at: 2019-10-14T10:41:16+03:00
 excerpt: "JSDoc açıklama etiketleri kullanarak markdown & html formatında API belgeleri oluşturma"
 toc: true
 tags: 
@@ -88,7 +89,9 @@ ApiDocs.hbs
 ```text
 # Documentation
 
+{% raw %}
 {{>main}}
+{% endraw %}
 ```
 
 npm script;
