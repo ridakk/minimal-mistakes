@@ -213,7 +213,7 @@ tr: &DEFAULT_TR
   comment_success_msg        : "Yorumunuz için teşekkürler! Yorumunuz onaylandıktan sonra sitede gösterilecektir."
   comment_error_msg          : "Maalesef bir hata oluştu. Lütfen zorunlu olan tüm alanları doldurduğunuzdan emin olun ve sonrasında tekrar deneyin."
   loading_label              : "Yükleniyor..."
-  search_label_text          :
+  search_label_text          : "Arama teriminizi girin..."
   search_placeholder_text    : "Arama teriminizi girin..."
   results_found              : "Sonuçlar bulundu"
   back_to_top                : "Başa dön"
